@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homeDisplay.css">
+    <title>イライラ棒　ホーム画面</title>
+</head>
+<body>
+  <header>
+    <h1>
+      イライラ棒 マウスカーソルVer
+    </h1>
+    <h3>
+      プレイしたいステージをクリックしてください
+    </h3>
+  </header>
+  <main>
+    <div class="stageLink">
+      <a href="./stage1.html">STAGE1 <br> American jokes</a>
+    </div>
+    <div class="stageLink">
+      <a href="./stage2.html">STAGE2 <br> ダンジョン</a>
+    </div>
+    <div class="stageLink">
+      <a href="./stage3.html">STAGE3 <br> 迷路</a>
+    </div>
+
+  </main>
+  <footer>
+    <h3 class="caution">
+      推奨環境:　　PC 全画面表示
+    </h3>
+  </footer>
+</body>
+</html>
+
+<!-- マウスカーソルを誘導する -->
+<script>
+  stageLink = document.getElementsByClassName("stageLink");
+  for(var i = 0; i < stageLink.length; i++){
+    stageLink[i].onclick = () => {
+    alert('選択したステージを開始します');
+    }
+  }
+</script>

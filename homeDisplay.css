@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    background: radial-gradient(#000,rgb(42, 41, 65));
+    text-align: center;
+}
+header{
+    height: 120px;
+    background: linear-gradient(to left, #eee, rgb(27, 79, 177));
+    color: #223322;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main{
+    height: 200px;
+}
+footer{
+    height: 100px;
+}
+.stageLink{
+    background: radial-gradient(rgb(206, 245, 135), chartreuse);
+    margin: auto;
+    margin-top: 150px;
+    display: inline-block;
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+}
+a{
+    text-decoration: none;
+}
+.caution{
+    background: linear-gradient(to left, white, darkgoldenrod);
+    width: 300px;
+    margin: auto;
+    margin-top: 180px;
+    border-radius: 20px;
+}

@@ -1,0 +1,38 @@
+body {
+    background: rgb(255, 252, 252);
+    color: rgb(206, 46, 247);
+    margin: 0;
+}
+header{
+    height: 120px;
+    background: #00aaaa;
+    color: seashell;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer{
+    height: 100px;
+    background: #3bff52;
+    text-align: center;
+}
+h4{
+    border: solid 5px #00aaaa;
+    width: max-content;
+}
+.japanese{
+    margin-left: auto;
+}
+.left,.right{
+    height: 50px;
+    width: 50px;
+    background: crimson;
+}
+.left{
+    margin-right: auto;
+}
+.right{
+    margin-left: auto;
+}

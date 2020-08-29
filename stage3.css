@@ -1,0 +1,294 @@
+body{
+    margin: 0;
+}
+header{
+    background: #00ff99;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.finishZone{
+    background: #000000;
+    color: darkgray;
+    width: auto;
+    height: 150px;
+    text-align: center;
+}
+#hint{
+    margin: auto;
+}
+.backGround{
+    background: cornflowerblue;
+    width: auto;
+    height: 330px;
+    position: relative;
+}
+
+/* 当たり判定の壁を作る */
+
+.frameLeft1,.frameRight1{
+    background: chocolate;
+    width: 30px;
+    height: 330px;
+    position: absolute;
+    top: 120px;
+}
+.frameLeft2,.frameRight2{
+    background: rgb(18, 132, 160);
+    width: 30px;
+    height: 150px;
+    position: absolute;
+    top: 450px;
+}
+.frameLeft1,.frameLeft2{
+    left: 0;
+}
+.frameRight1,.frameRight2{
+    right: 0;
+}
+/* 上下の間隔は20px,左右の間隔は基本20px */
+.frameTop1,.frameTop2,
+.frameButtom1,.frameButtom2,.finishButtom{
+    background: chocolate;
+    height: 30px;
+    position: absolute;
+}
+.frameTop1{
+    width: 550px;
+    top: 120px;
+    left: 120px;
+}
+.frameTop2{
+    width: 500px;
+    top: 120px;
+    right: 0;
+}
+.frameButtom1{
+    width: 340px;
+    top: 420px;
+    left: 0;
+}
+.frameButtom2{
+    width: 800px;
+    top: 420px;
+    right: 0;
+}
+.finishButtom{
+    background: rgb(170, 170, 170);
+    width: 1280px;
+    top: 550px;
+}
+
+/* 一時的に障害物を消す */
+/* .left{
+    display: none;
+} */
+/* .right{
+    display: none;
+} */
+
+.bar1-1,.bar1-2,.bar1-3,.bar1-4,.bar1-5{
+    background: chocolate;
+    height: 30px;
+    position: absolute;
+    top: 170px;
+}
+.bar1-1{
+    width: 200px;
+    left: 0;
+}
+.bar1-2{
+    width: 100px;
+    left: 230px;
+}
+.bar1-3{
+    width: 300px;
+    left: 400px;
+}
+.bar1-4{
+    width: 130px;
+    right: 370px;
+}
+.bar1-5{
+    width: 300px;
+    right: 50px;
+}
+.bar2-1,.bar2-2,.bar2-3,.bar2-4{
+    background: chocolate;
+    height: 30px;
+    position: absolute;
+    top: 220px;
+}
+.bar2-1{
+    width: 200px;
+    left: 50px;
+}
+.bar2-2{
+    width: 270px;
+    left: 270px;
+}
+.bar2-3{
+    width: 390px;
+    left: 560px;
+}
+.bar2-4{
+    width: 200px;
+    right: 30px;
+}
+/* パスワードを隠す */
+#secret{
+    color: cornflowerblue;
+    text-align: center;
+    width: 70px;
+    height: 20px;
+    position: absolute;
+    top: 300px;
+    right: 30px;
+}
+#secret:hover{
+    background: #00ff99;
+}
+.order{
+    color: cornflowerblue;
+    text-align: center;
+    width: 30px;
+    height: 20px;
+    position: absolute;
+}
+.order:hover{
+    background: #c08060;
+}
+.bar3-1,.bar3-2,.bar3-3,.bar3-4,.bar3-5{
+    background: chocolate;
+    height: 30px;
+    position: absolute;
+    top: 270px;
+}
+.bar3-1{
+    width: 500px;
+    left: 0;
+}
+.bar3-2{
+    width: 200px;
+    left: 520px;
+}
+.bar3-3{
+    width: 100px;
+    left: 740px;
+}
+.bar3-4{
+    width: 50px;
+    left: 860px;
+}
+.bar3-5{
+    width: 300px;
+    right: 0;
+}
+.bar4-1,.bar4-2,.bar4-3,.bar4-4{
+    background: chocolate;
+    height: 30px;
+    position: absolute;
+    top: 320px;
+}
+.bar4-1{
+    width: 200px;
+    left: 0;
+}
+.bar4-2{
+    width: 400px;
+    left: 220px;
+}
+.bar4-3{
+    width: 300px;
+    left: 640px;
+}
+.bar4-4{
+    width: 250px;
+    right: 0;
+}
+.bar5-1,.bar5-2,.bar5-3,.bar5-4{
+    background: chocolate;
+    height: 30px;
+    position: absolute;
+    top: 370px;
+}
+.bar5-1{
+    width: 250px;
+    left: 50px;
+}
+.bar5-2{
+    width: 500px;
+    left: 320px;
+}
+.bar5-3{
+    width: 350px;
+    right: 50px;
+}
+.mini1-1,.mini1-2,.mini2-1,.mini2-2,.mini3-1,.mini3-2,
+.mini4-1,.mini4-2,.mini5-1,.mini5-2,.mini6-1,.mini6-2{
+    background: chocolate;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+}
+.mini1-1{
+    top: 150px;
+    left: 230px;
+}
+.mini1-2{
+    top: 150px;
+    right: 480px;
+}
+.word2{
+    top: 150px;
+    left: 250px;
+}
+.mini2-1{
+    top: 200px;
+    left: 230px;
+}
+.mini2-2{
+    top: 200px;
+    right: 330px;
+}
+.mini3-1{
+    top: 250px;
+    left: 520px;
+}
+.mini3-2{
+    top: 250px;
+    right: 480px;
+}
+.word1{
+    top: 300px;
+    left: 30px;
+}
+.mini4-1{
+    top: 300px;
+    left: 600px;
+}
+.mini4-2{
+    top: 300px;
+    right: 400px;
+}
+.mini5-1{
+    top: 350px;
+    left: 180px;
+}
+.mini5-2{
+    top: 350px;
+    right: 380px;
+}
+.mini6-1{
+    top: 400px;
+    left: 320px;
+}
+.mini6-2{
+    top: 400px;
+    right: 200px;
+}
+.word3{
+    top: 400px;
+    right: 170px;
+}
